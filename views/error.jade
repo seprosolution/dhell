@@ -1,0 +1,7 @@
+extends layout
+
+block content
+
+    div#error-wrapper.wrapper
+        h2= error.status + ' ' + message
+        pre #{error.stack}
